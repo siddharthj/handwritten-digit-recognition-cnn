@@ -1,3 +1,5 @@
+
+### How to build and execute 
 This folder contains the following Python scripts:
     1] train.py
     2] test.py
@@ -61,3 +63,5 @@ The following commands can be used to run the program:
 ------------------------- Contributors ----------------------------
 1) Siddharth Jain - jain.sid.94@gmail.com siddhartjain@ufl.edu
 2) Rishab Lokray - rishab.lokray@ufl.edu
+
+#### Full project report can be found as a PDF in the current directory
