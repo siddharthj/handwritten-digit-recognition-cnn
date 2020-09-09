@@ -1,0 +1,63 @@
+This folder contains the following Python scripts:
+    1] train.py
+    2] test.py
+
+------------------------------Instructions---------------------------------
+** The test and train data files should be copied to the project folder **
+** The test and train data should be a .npy file.
+
+
+------------------------------ train.py -----------------------------------
+** This trains the convolutonal neural network. 
+
+The following commands can be used to run the program:
+      
+   1)    python train.py x_train_clean.npy y_train_clean.npy
+            
+            This command creates the CNN model and saves it on the disk.
+            The input data present in the file "x_train_clean.npy" "y_train_clean.npy" is already pre processed and cleaned.
+            This would not pre process the input data. 
+            *DO NOT USE THIS IF YOU WISH TO NOT JUST CREATE THE MODEL FROM OUR ALREADY PREPROCESSED DATASET.*
+            ALSO, WE WERE NOT ABLE TO UPLOAD "x_train_clean.npy" TO GIT
+            Please download from google drive - https://drive.google.com/file/d/1Z4I8j4hxsG7hfzsJknaZEuUhtnVLSN23/view?usp=sharing
+   
+   2)    python train.py 
+            
+            This command creates the CNN model and saves it on the disk.
+            
+			The input data is loaded from MNIST dataset and the data file named "X_train.npy" and "y_train.npy"
+            
+			"X_train.npy" - We were not able to upload the file to GIT, so download from google drive
+			https://drive.google.com/file/d/1YhjpqalLnxMooaU3f6J4glqaGsBdpb_R/view?usp=sharing
+			"y_train.npy" - Is the training data given in the in the same directory.
+         
+			These files should be present in the same directory as the program with the name "X_train.npy" and "y_train.npy"
+            If you wish to train the model with your own data file then either
+               a. Replace your data files with the same name as "X_train.npy" and "y_train.npy"
+               b. Change the file names on the line 285 with your data and label file names
+                  line 285 : x_train, y_train = preProcessData(<YOUR DATA FILE NAME>,<YOUR LABEL FILE NAME>)
+
+
+-------------------------- Trained Models --------------------------------
+** The trained models can be found by the file name "model.json" and its values as "model.hs"
+
+
+------------------------------ test.py -----------------------------------
+** This loads the trained model and tests on a test data set.
+** The trained model files "model.json" and "model.hs" should be present in the same directory as the program is.
+** Steps to execute
+            1] Import the python file and its predict method defined as below
+
+                     from test import predict
+
+            2] Execute the predict method and store the predicted labels in a variable.
+               This method takes in the test data fileName. 
+               The file with the same name should be present in the same directory as the program is.
+
+                     predicted_values = predict('test_data_marker.npy') 
+
+** It will return the predicted values.
+
+------------------------- Contributors ----------------------------
+1) Siddharth Jain - jain.sid.94@gmail.com siddhartjain@ufl.edu
+2) Rishab Lokray - rishab.lokray@ufl.edu
